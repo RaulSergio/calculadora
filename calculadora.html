@@ -1,15 +1,21 @@
 <html>
 	<head>
-	<title>Caculadora</title>
+	<title>Drago's Calculator</title>
 	</head>
 	
 		<body>
 			<FORM NAME="calculadora">
 				<form>
-
-					<input id="visor" type="text" style="width: 186px; height: 20px" onclick="" value="" />
-					<br/>
-					<br/>
+				<!-- colocando os botoes e visor dentro de uma tabela-->
+				<table border='4'>
+					<!-- criando tabela separada para o visor-->
+					<tr>
+					<td> <input id="visor" type="text" style="width: 186px; height: 20px" onclick="" value="" /> </td>
+					</tr>
+					
+					<!-- criando tabela separada para os botoes-->
+					<tr>
+					<td>
 					<input id="bt7" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '7' " value=" 7 " />
 					<input id="bt8" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '8' " value=" 8 " />
 					<input id="bt9" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '9' " value=" 9 " />
@@ -38,7 +44,9 @@
 					<input id="btMais" type="button" style="width: 40px; height: 20px" onclick="calculadora.visor.value += '+' " value="+ " />
 					<input id="btIgual" type="button" style="width: 40px; height: 20px" onclick="calculadora.visor.value = eval(calculadora.visor.value)" value="=" /> 
 					<!--funcao eval() Converte uma string em código JavaScript e executa-o, claro se for um comando válido.<-->
-				
+					</td>
+					</tr>
+				</table>
 				</form>
 			</FORM>
 		</body>
