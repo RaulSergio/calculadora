@@ -6,14 +6,16 @@
 		<body>
 			<FORM NAME="calculadora">
 				<form>
+
 					<input id="visor" type="text" style="width: 186px; height: 20px" onclick="" value="" />
 					<br/>
 					<br/>
 					<input id="bt7" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '7' " value=" 7 " />
 					<input id="bt8" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '8' " value=" 8 " />
 					<input id="bt9" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '9' " value=" 9 " />
-					<input id="btAc" type="button" style="width: 40px; height: 20px" onclick="calculadora.visor.value += '' " value="AC" />
-					<input id="btOff" type="button" style="width: 40px; height: 20px" onclick="calculadora.visor.value += '' " value="OFF" />
+					<input id="btAc" type="reset" style="width: 40px; height: 20px" value="AC" />
+					<input id="btOff" type="reset" style="width: 40px; height: 20px" value="OFF" />
+					<!-- input type="reset" cria um botao que limpa tudo no input-->
 					
 					<br/>
 					<input id="bt4" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '4' " value=" 4 " />
@@ -34,7 +36,9 @@
 					<input id="bt00" type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '00' " value="00" />
 					<input id="bt." type="button" style="width: 30px; height: 20px" onclick="calculadora.visor.value += '.' " value=" .  " />
 					<input id="btMais" type="button" style="width: 40px; height: 20px" onclick="calculadora.visor.value += '+' " value="+ " />
-					<input id="btIgual" type="button" style="width: 40px; height: 20px" onclick="calculadora.visor.value = eval(calculadora.visor.value)" value="=" />
+					<input id="btIgual" type="button" style="width: 40px; height: 20px" onclick="calculadora.visor.value = eval(calculadora.visor.value)" value="=" /> 
+					<!--funcao eval() Converte uma string em código JavaScript e executa-o, claro se for um comando válido.<-->
+				
 				</form>
 			</FORM>
 		</body>
